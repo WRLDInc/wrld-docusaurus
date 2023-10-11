@@ -107,13 +107,13 @@ function getLocalizedConfigValue(/** @type {string} */ key) {
 /** @returns {Promise<import('@docusaurus/types').Config>} */
 module.exports = async function createConfigAsync() {
   return {
-    title: 'Docusaurus',
+    title: 'WRLD Docs',
     tagline: getLocalizedConfigValue('tagline'),
-    organizationName: 'facebook',
-    projectName: 'docusaurus',
+    organizationName: 'wrld',
+    projectName: 'wrld-docs',
     baseUrl,
     baseUrlIssueBanner: true,
-    url: 'https://docusaurus.io',
+    url: 'https://wrld.support',
     // Dogfood both settings:
     // - force trailing slashes for deploy previews
     // - avoid trailing slashes in prod
@@ -224,7 +224,7 @@ module.exports = async function createConfigAsync() {
             title: 'Docusaurus changelog',
             description:
               'Keep yourself up-to-date about new features in every release',
-            copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc.`,
+            copyright: `Copyright © ${new Date().getFullYear()} WRLD Inc.`,
             language: defaultLocale,
           },
         },
@@ -445,7 +445,7 @@ module.exports = async function createConfigAsync() {
           },
           gtag: !(isDeployPreview || isBranchDeploy)
             ? {
-                trackingID: ['G-E5CR2Q1NRE'],
+                trackingID: ['G-RJ2QWB1H38'],
               }
             : undefined,
           sitemap: {
@@ -710,7 +710,7 @@ module.exports = async function createConfigAsync() {
             src: '/img/meta_opensource_logo_negative.svg',
             href: 'https://opensource.fb.com',
           },
-          copyright: `Copyright © ${new Date().getFullYear()} Meta Platforms, Inc. Built with Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} WRLD Inc. Built with Docusaurus.`,
         },
       }),
   };
